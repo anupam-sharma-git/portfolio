@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sec{
+    height: 100vh;
+    min-height: 500px;
+    
+}
+.bg-color{
+    background-color:#ddd;
+}
+.try{
+background: linear-gradient(to right, #2a0845, rgb(100, 65, 165)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.text-style{
+   
+}
+.head-img{
+    width: 100%;
+    height:100%;
+}
+.animate-img{
+    animation: blink 8s infinite ease-in-out;
+
+}
+@keyframes blink{
+  0%{
+      opacity: 0;
+  }
+  25%{
+        opacity:1;
+      }
+  50%{
+    opacity: 0;
+  }    
+  75%{
+      opacity: 1;
+  }
+  100%{
+    opacity:0;
+}
+
+}
+
+.font-size{
+    font-size: xx-large;
+}
+
+.frame{
+    margin-top: -250px;
+    margin-left: -80px;
+    width:300px;
+}
+
+
+
+@media screen and (max-width:768px){
+    .head-img{
+        width: 50%;
+        height:50%;
+        margin-left:25%;
+}
+
+}
