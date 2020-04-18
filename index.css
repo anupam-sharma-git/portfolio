@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .sec{
     height: 100vh;
@@ -15,9 +16,7 @@ background: linear-gradient(to right, #2a0845, rgb(100, 65, 165)); /* W3C, IE 10
 
 }
 
-.text-style{
-   
-}
+
 .head-img{
     width: 100%;
     height:100%;
@@ -49,19 +48,50 @@ background: linear-gradient(to right, #2a0845, rgb(100, 65, 165)); /* W3C, IE 10
     font-size: xx-large;
 }
 
+
 .frame{
     margin-top: -250px;
-    margin-left: -80px;
-    width:300px;
+    margin-left: 0px;
+    width:250px;
 }
 
+.head-text-size{
+   font-size:130px; 
+}
+.sub-text-size{
+    font-size:25px;
+}
 
+h1, h2, h3{
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 10px black;
+}
+
+h1{
+    font-family: 'Ruthie', cursive;
+}
 
 @media screen and (max-width:768px){
     .head-img{
         width: 50%;
-        height:50%;
+        margin-top: -8%;
         margin-left:25%;
+      
 }
 
+
+}
+
+@media screen and (max-width:415px){
+    .head-img{
+        width: 90%;
+        margin-left:6%;
+        margin-top: 15%;
+}
+.head-text-size{
+    font-size:100px; 
+ }
+ .sub-text-size{
+     font-size:20px;
+ }
 }
