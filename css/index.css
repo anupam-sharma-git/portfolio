@@ -44,17 +44,17 @@ h1,p{
 
 /*----------------- s animation ----------------------------------  */
 .animate-img{
-   animation: blink 8s infinite ease-in-out;
+   animation: blink 5s infinite ease-in-out;
 }
 @keyframes blink{
   0%{
-      opacity: 0.3;
+      opacity: 0.4;
     }
    50%{
     opacity: 1;
    }
   100%{
-    opacity:0.3;
+    opacity:0.4;
    }
 }
 /*-----------------! s animation ----------------------------------  */
@@ -62,18 +62,16 @@ h1,p{
 /*--------------------------- footer ----------------------------------  */
 .insta, .linkedin, .twitter{    /*----------Social icon button----------*/
   color: white;
-  margin: 0 20px;   
+  margin: 20px;   
   background: linear-gradient(45deg, #2a0845, rgb(100, 65, 165)); 
   border-radius: 50px;
-  padding: 10px 20px;
-  border:2px solid white ;
-  box-shadow: 0 0 5px beige; 
+  padding: 10px 15px;
+  border:1px solid white ;
+  transition: 0.2s ease-in-out;
 }
 .insta:hover, .linkedin:hover, .twitter:hover {
-    color:#2a0845;
-    background:  linear-gradient(45deg, #dfccee, #6a21a7);
-    box-shadow: 0 0 20px white;
-    transition: 0.2s ease-in-out;
+    background:  linear-gradient(45deg, #d6b8ee, #6a21a7);
+    box-shadow: 0 0 30px white;
 }
 .a-tag:hover{
   text-decoration: none;
