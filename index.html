@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet"> 
+  
 
   <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
@@ -13,16 +16,18 @@
   <script src="https://kit.fontawesome.com/fd77040b03.js" crossorigin="anonymous"></script>
  
  
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet"> 
+
 
  
   </head> 
-<body class="bg-color">
-
+<body class="bg-color"  onload="loading()">
+<!--<div id="load">
+  <img src="images/load.gif" alt="">
+</div>-->
     <header class="try ">
-       <div class="container-fluid p-3">
-           <div class="row align-items-center ">
-             <div class=" col-md-5 text-center p-2">
+          <div class="container-fluid">
+           <div class="row align-items-center sec">
+             <div class=" col-md-5 text-center ">
               <img src="images/as2.png" alt="" class="head-img animate-img" >
                 </div>
                <div class="col-md-7  text-center "> 
@@ -32,8 +37,59 @@
                 </div>
              </div>
            </div>
-        </div>
+        </div> 
      </header>
+
+
+<section>
+<div class="container-fluid  sec cont ">
+<div class="frame-1"></div>
+<div class="pic-1"> <img src="images/anu1.jpg" alt=""> </div>
+<div class="frame-2"></div>
+<div class="box-content-1">
+  <h1> Heavy Poster </h1>
+ <h3> Background edit, light overlay, Custom Text </h3>
+ </div>
+</div>
+</section>
+
+<section class="">
+<div class="container-fluid  sec cont ">
+  <div class="frame-11"></div>
+  <div class="pic-2"> <img src="images/anu2.jpg" alt=""> </div>
+  <div class="frame-22"></div>
+  <div class="box-content-2">
+    <h1> Heavy Poster </h1>
+   <h3> Background edit, light overlay, Custom Text </h3>
+   </div>
+  </div>
+</section> 
+
+<section class="">
+  <div class="container-fluid  sec cont">
+  <div class="frame-1"></div>
+  <div class="pic-1"> <img src="images/anu3.jpg" alt=""> </div>
+  <div class="frame-2"></div>
+  <div class="box-content-1">
+    <h1> Heavy Poster </h1>
+   <h3> Background edit, light overlay, Custom Text </h3>
+   </div>
+  </div>
+</section>
+
+<section class="">
+  <div class="container-fluid  sec cont">
+    <div class="frame-11"></div>
+    <div class="pic-2"> <img src="images/anu4.jpg" alt=""> </div>
+    <div class="frame-22"></div>
+    <div class="box-content-2">
+      <h1> Heavy Poster </h1>
+     <h3> Background edit, light overlay, Custom Text </h3>
+     </div>
+    </div>
+  </section>    
+
+
 
 
 <section class="">
@@ -49,7 +105,7 @@
 </div>
 </section>
 
-<footer class="try  text-white py-5">
+<footer class="try  text-white py-5 ">
   <div class=" container text-center ">
     <h1 class="text-center font-weight-bold">THANKS!</h1>
     <h3>Want to chat about something?</h3>
@@ -66,7 +122,62 @@
 
     </div>
 </footer>
-    
+
+
+
+
+<script>
+  /*var loader=document.getElementById('load');
+  function loading(){
+    loader.style.display='none';
+  } */
+
+
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fadein").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(350,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(350,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+var waypoint = new Waypoint({
+  element: document.getElementById('px-offset-waypoint'),
+  handler: function(direction) {
+    notify('I am 20px from the top of the window')
+  },
+  offset: 20 
+})
+
+
+
+
+
+
+
+</script>   
 
 </body>
 </html>
